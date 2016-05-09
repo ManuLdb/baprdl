@@ -1,23 +1,61 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
-<?php wp_head(); ?>
+<html>
+
+<head lang="fr">
+    <meta charset="UTF-8">
+    <title>Rêve de Libellule</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/themes/rdl/library/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/themes/rdl/library/css/style.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="<?php bloginfo('url'); ?>/wp-content/themes/rdl/img/LOGO.png" />
 </head>
-<body <?php body_class(); ?>>
-<div id="wrapper" class="hfeed">
-<header id="header" role="banner">
-<section id="branding">
-<div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?></div>
-<div id="site-description"><?php bloginfo( 'description' ); ?></div>
-</section>
-<nav id="menu" role="navigation">
-<div id="search">
-<?php get_search_form(); ?>
-</div>
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+
+<body class="woocommerce">
+
+<nav id="mainmenu" class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid menu">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+                <img class="img_header" src="<?php bloginfo('url'); ?>/wp-content/themes/rdl/img/LOGO.png" alt="logo_reves_de_libellule">
+            </a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+            <div class="menu-header">
+                <div class="row head-quote">
+                    <div class="col-xs-8 pull-right">
+                        <?php wp_nav_menu(array(
+                            'menu' => 'title_header',
+                            array(
+                                'walker' => new wp_bootstrap_navwalker()
+                            ))); ?>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row menu-principal">
+                    <div class="col-xs-8 pull-right">
+                        <?php wp_nav_menu(array(
+                            'menu' => 'title_li',
+                            array(
+                                'class' => 'menu-header nav navbar-nav navbar-right pull-right',
+                                'walker' => new wp_bootstrap_navwalker()
+                            ))); ?>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </nav>
-</header>
-<div id="container">

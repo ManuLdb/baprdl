@@ -1,0 +1,470 @@
+/********** VARIABLES **********/
+/** Fonts **/
+/********** COLORS **********/
+@import url(https://fonts.googleapis.com/css?family=roboto:400,700,500,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+/* line 1, /Applications/MAMP/htdocs/bapLib/sass/_mixins.scss */
+.transition-property-links {
+  transition-property: all;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all; }
+
+/* line 7, /Applications/MAMP/htdocs/bapLib/sass/_mixins.scss */
+.transition-duration-links {
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s; }
+
+/******** SECTIONS ********/
+html {
+  margin-top: 0px!important;
+}
+/* line 11, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+body {
+  background-image: url("../../img/Fond_Bulles_Opacité.png"); }
+  /* line 13, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  body .border-bottom {
+    border-bottom: 4px solid #91304f;
+    padding-bottom: 40px; }
+img .img-label{
+  margin: 0 auto;
+}
+/*.video_presentation {
+	background-color: $color-minor;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	h1 {
+		margin-bottom: 40px;
+	}
+}*/
+/* line 27, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+/* line 33, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 40, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.img_header {
+  margin: 30px 0px 0px 30px;
+  height: 150px;
+}
+
+/* line 44, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.avantage {
+  background-color: #91304f;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  /* line 49, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .avantage h1 {
+    margin-bottom: 80px; }
+  /* line 52, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .avantage i {
+    color: #91304f; }
+  /* line 55, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .avantage p {
+    padding: 10px; }
+
+/*** CAROUSEL START ***/
+/* line 60, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.carousel-inner {
+  height: 400px;
+  background-color: #222; }
+  /* line 63, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .carousel-inner .item {
+    height: 100%;
+    background-color: #91304f; }
+    /* line 66, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .carousel-inner .item .carousel-caption {
+      height: 100%;
+      padding-top: 40px; }
+      /* line 69, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+      .carousel-inner .item .carousel-caption hr {
+        margin-top: 20px;
+        margin-left: 25%;
+        margin-right: 25%;
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+        background-image: -moz-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+        background-image: -ms-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+        background-image: -o-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0)); }
+      /* line 80, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+      .carousel-inner .item .carousel-caption .list-inner {
+        margin-top: 30px; }
+        /* line 82, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+        .carousel-inner .item .carousel-caption .list-inner ul {
+          list-style-type: none; }
+        /* line 85, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+        .carousel-inner .item .carousel-caption .list-inner li {
+          margin-bottom: 20px; }
+
+/* line 94, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.carousel-control span {
+  margin-top: 180px; }
+
+/*** END CAROUSEL ***/
+/*** CHARTE ***/
+/* line 101, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.charte {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  /* line 104, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .charte h1 {
+    margin-bottom: 20px; }
+  /* line 107, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .charte h2 {
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  /* line 112, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .charte p {
+    padding: 1px; }
+  /* line 116, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .charte .caption hr {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -moz-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -ms-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -o-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0)); }
+
+/*** END CHARTE ***/
+/* line 130, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.newsletter {
+  background-color: #99958c;
+  color: #fff;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px; }
+  /* line 139, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .newsletter h2 {
+    margin-bottom: -10x;
+    margin-left: 30px; }
+  /* line 143, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .newsletter p {
+    margin-left: 30px; }
+
+/*******  FOOTER *******/
+/* line 148, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+footer {
+  background-color: #ececec;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  /* line 152, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  footer h5 {
+    color: #c8c3bd;
+    font-size: 19px; }
+  /* line 156, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  footer .footer-comment {
+    background-color: #e19389;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  /* line 162, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  footer .footer-right-divider {
+    border-right: 3px solid #c8c3bd; }
+  /* line 166, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  footer ul li {
+    font-size: 17px; }
+    /* line 168, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    footer ul li a:link {
+      color: #363533;
+      transition-property: all;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s; }
+    /* line 177, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    footer ul li a:visited {
+      color: #363533; }
+    /* line 181, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    footer ul li a:hover {
+      color: #91304f;
+      text-decoration: none;
+      transition-property: all;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s; }
+    /* line 190, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    footer ul li a:active {
+      color: #fff; }
+
+/* line 199, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.menu-header .head-quote ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+  /* line 203, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .menu-header .head-quote ul li {
+    margin-left: 60px;
+    float: right; }
+    /* line 206, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .menu-header .head-quote ul li a {
+      text-decoration: none;
+      color: #91304f;
+      font-size: 20px;
+      font-weight: bold;
+    }
+      /* line 209, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+      .menu-header .head-quote ul li a i {
+        margin-left: 5px; }
+    /* line 213, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .menu-header .head-quote ul li a:hover {
+      color: #5e5e5e; }
+
+.menu-header .menu-principal ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+/* line 203, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.menu-header .menu-principal ul li {
+  margin-left: 60px;
+  float: right; }
+/* line 206, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.menu-header .menu-principal ul li a {
+  text-decoration: none;
+  color: #5e5e5e;
+  font-size: 23px;
+}
+/* line 209, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.menu-header .menu-principal ul li a i {
+  margin-left: 5px; }
+/* line 213, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.menu-header .menu-principal ul li a:hover {
+  color: #91304f; }
+/******* NAVBAR *******/
+/* line 224, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.menu {
+  background-color: white;
+  padding: 20px !important; }
+
+.navbar{
+  margin-bottom: 0px!important;
+}
+/* line 228, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.navbar-static-top {
+  border: 0 solid white; }
+
+/* line 231, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.navbar-default {
+  background-color: black;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s; }
+  /* line 237, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: black; }
+  /* line 242, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .navbar-default .navbar-header .navbar-brand {
+    width: 100%;
+    height: 165px; }
+  /* line 251, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .navbar-default .nav li a {
+    text-transform: capitalize;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: black; }
+  /* line 257, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .navbar-default .nav li a:hover {
+    color: #91304f; }
+  /* line 262, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .navbar-default .nav li.active a {
+    background-color: #ffffff; }
+
+@media (max-width: 1100px) {
+  /* line 282, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .navbar-default .nav li a {
+    font-size: 1.4em; } }
+
+/******* Produit *******/
+/* line 299, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.lit {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #99958c; }
+  /* line 304, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .lit .contenu-lit h1 {
+    text-transform: uppercase;
+    color: white; }
+  /* line 308, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .lit .contenu-lit hr {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -moz-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -ms-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -o-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0)); }
+  /* line 319, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .lit .contenu-lit .row {
+    padding-top: 30px; }
+    /* line 322, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .lit .contenu-lit .row .description-lit h2 {
+      color: #91304f;
+      text-transform: uppercase;
+      text-align: left; }
+    /* line 327, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .lit .contenu-lit .row .description-lit p {
+      color: white;
+      text-align: left; }
+    /* line 331, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .lit .contenu-lit .row .description-lit a {
+      display: block;
+      width: 301px;
+      text-transform: uppercase;
+      padding: 10px 80px;
+      margin: 0 auto;
+      background-color: #91304f;
+      color: #FFFFFF;
+      text-decoration: none;
+      -webkit-transition: background 0.5s ease;
+      -moz-transition: background 0.5s ease;
+      -ms-transition: background 0.5s ease;
+      -o-transition: background 0.5s ease;
+      transition: background 0.5s ease; }
+    /* line 346, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .lit .contenu-lit .row .description-lit a:hover {
+      background-color: #ac2925; }
+
+/******* AVIS *******/
+/* line 356, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+.avis {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #91304f; }
+  /* line 361, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .avis .contenu-avis h1 {
+    text-transform: uppercase;
+    color: white; }
+  /* line 365, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .avis .contenu-avis hr {
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -moz-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -ms-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0));
+    background-image: -o-linear-gradient(left, rgba(225, 147, 137, 0), rgba(225, 147, 137, 0.75), rgba(225, 147, 137, 0)); }
+  /* line 376, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+  .avis .contenu-avis form {
+    padding-top: 50px; }
+    /* line 378, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .avis .contenu-avis form textarea {
+      margin-bottom: 50px; }
+    /* line 382, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .avis .contenu-avis form .row button {
+      display: block;
+      width: 240px;
+      text-transform: uppercase;
+      padding: 10px 80px;
+      margin: 0 auto;
+      background-color: #99958c;
+      color: #FFFFFF;
+      text-decoration: none;
+      -webkit-transition: background 0.5s ease;
+      -moz-transition: background 0.5s ease;
+      -ms-transition: background 0.5s ease;
+      -o-transition: background 0.5s ease;
+      transition: background 0.5s ease; }
+    /* line 397, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+    .avis .contenu-avis form .row button:hover {
+      background-color: #ac2925; }
+
+/******* Contact *******/
+/* line 408, /Applications/MAMP/htdocs/bapLib/sass/style.scss */
+header {
+  height: 650px;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+header img{
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 100%;
+}
+/*Contact*/
+.contact{
+  position: relative;
+  z-index: 85;
+  background-color: #983e5b;
+  opacity: 0.9;
+  top: -5em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact form textarea {
+  margin-bottom: 50px;
+  height: 200px;
+}
+.contact h1{
+  color: white;
+  opacity: 1 !important;
+}
+.contact .form-group{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+.contact form .row button {
+  display: block;
+  width: 240px;
+  text-transform: uppercase;
+  padding: 10px 80px;
+  margin: 0 auto;
+  background-color: #91304f;
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease; }
+.contact form .row button:hover {
+  background-color: #ac2925; }
+.form-control{
+  border: 2px solid #1E1D1D;
+}
+.wpcf7-submit{
+  border:#ad3e68;
+  background-color: #ad3e68 !important;
+  color: white;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
